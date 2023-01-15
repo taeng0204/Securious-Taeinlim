@@ -1,0 +1,25 @@
+:root {
+  --main-bg-color: black;
+  --main-color: white;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  width: 100vw;
+  height: 20px;
+  background-color: var(--main-bg-color);
+  color: var(--main-color);
+}
+
+main {
+  width: 100vw;
+  height: calc(100vh - 20px);
+  background-color: var(--main-color);
+  color: var(--main-bg-color);
+}
+
+
