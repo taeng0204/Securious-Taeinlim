@@ -76,24 +76,72 @@ main {
   position: relative;
 }
 
-section {
-  flex-grow: 2;
-  font-size: 80px;
-  text-align: center;
+.face-container {
+  display: flex;
+  flex-direction: column;
 }
 
-strong {
+.circle-container {
+  display: flex;
+  gap: 300px;
+}
+
+.circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
   background-color: var(--cat-eye-color);
-  padding: 0px 10px;
+  position: relative;
 }
 
-strong:hover {
-  transition: all 0.35s;
-  color: var(--main-color);
-  font-size: 100px;
+.eye {
+  width: 40px;
+  height: 40px;
+  top: calc(50% - 20px);
+  left: calc(50% - 20px);
+  border-radius: 50%;
+  background-color: black;
+  position: absolute;
 }
 
-article {
-  flex-grow: 1;
-  font-size: 30px;
+.nm-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.nose {
+  width: 0;
+  height: 0;
+  border-radius: 30px;
+  border-bottom: 50px solid transparent;
+  border-top: 50px solid var(--main-bg-color);
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+}
+
+.mouse {
+  width: 100px;
+  height: 2px;
+  border-radius: 20px;
+  background-color: var(--main-bg-color);
+}
+
+.teeth {
+  width: 0;
+  height: 0;
+  border-bottom: 15px solid transparent;
+  border-top: 10px solid var(--main-bg-color);
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+}
+
+#name {
+  font-weight: 100;
+  font-size: 80px;
+  z-index: 99;
+  position: absolute;
+  left: 10px;
+  top: 600px;
 }
