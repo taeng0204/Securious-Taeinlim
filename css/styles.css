@@ -1,6 +1,7 @@
 :root {
   --main-bg-color: black;
-  --main-color: white;
+  --main-color: whitesmoke;
+  --cat-eye-color: #D7DF01;
 }
 
 body {
@@ -10,16 +11,81 @@ body {
 
 header {
   width: 100vw;
-  height: 20px;
+  height: 40px;
   background-color: var(--main-bg-color);
   color: var(--main-color);
+  transition: all 0.35s;
 }
 
 main {
   width: 100vw;
-  height: calc(100vh - 20px);
+  height: calc(100vh - 40px);
   background-color: var(--main-color);
   color: var(--main-bg-color);
+  transition: all 0.35s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
 
+.face-container {
+  display: flex;
+  flex-direction: column;
+}
 
+.circle-container {
+  display: flex;
+  gap: 300px;
+}
+
+.circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: var(--cat-eye-color);
+  position: relative;
+}
+
+.eye {
+  width: 40px;
+  height: 40px;
+  top: calc(50% - 20px);
+  left: calc(50% - 20px);
+  border-radius: 50%;
+  background-color: black;
+  position: absolute;
+}
+
+.nm-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.nose {
+  width: 0;
+  height: 0;
+  border-radius: 30px;
+  border-bottom: 50px solid transparent;
+  border-top: 50px solid var(--main-bg-color);
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+}
+
+.mouse {
+  width: 100px;
+  height: 2px;
+  border-radius: 20px;
+  background-color: var(--main-bg-color);
+}
+
+.teeth {
+  width: 0;
+  height: 0;
+  border-bottom: 15px solid transparent;
+  border-top: 10px solid var(--main-bg-color);
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+}
