@@ -102,6 +102,7 @@ main {
   border-radius: 50%;
   background-color: black;
   position: absolute;
+  transition: height 0.1s;
 }
 
 .nm-container {
@@ -143,5 +144,5 @@ main {
   z-index: 99;
   position: absolute;
   left: 10px;
-  top: 600px;
+  top: 500px;
 }
