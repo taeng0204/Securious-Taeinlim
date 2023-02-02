@@ -38,7 +38,7 @@ nav {
   flex-grow: 1;
 }
 
-nav > div {
+nav > a {
   font-weight: bold;
   width: 100px;
   height: 100%;
@@ -54,7 +54,7 @@ a {
   color: inherit;
 }
 
-nav > div:hover {
+nav > a:hover {
   background-color: var(--main-color);
   color: var(--main-bg-color);
 }
